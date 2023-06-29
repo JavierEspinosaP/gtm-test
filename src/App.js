@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import TagManager from 'react-gtm-module/dist/TagManager';
 import { Accordion } from './components/Accordion/Acordion';
 import { Header } from './components/Header/Header';
@@ -6,10 +6,22 @@ import { Youtube } from './components/Video/Video';
 import './App.css';
 // import { products } from "./utils/data";
 
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+  //Indicar el ID del proyecto de marketing
+    gtmId: 'GTM-XXXXXX'
+}
+
+
 const App =()=>  {
 
   const [preCart, setPreCart] = useState([]);
   const [cart, setCart] = useState();
+
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+    }, []);
 
 
   const itemsToBuy = (mode, element, index, products) => {
