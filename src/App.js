@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Accordion } from './components/Accordion/Acordion';
 import { Header } from './components/Header/Header';
 import { Youtube } from './components/Video/Video';
