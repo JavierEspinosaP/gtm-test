@@ -8,7 +8,7 @@ import TagManager from 'react-gtm-module/dist/TagManager';
 
 const tagManagerArgs = {
   //Indicar el ID del proyecto de marketing
-    gtmId: 'GTM-XXXXXX'
+    gtmId: 'GTM-TJT77P4'
 }
 
 TagManager.initialize(tagManagerArgs);
