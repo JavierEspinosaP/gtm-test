@@ -4,7 +4,7 @@ import { Header } from './components/Header/Header';
 import { Youtube } from './components/Video/Video';
 import './App.css';
 // import { products } from "./utils/data";
-import TagManager from 'react-gtm-module/distr/TagManager';
+import TagManager from 'react-gtm-module/dist/TagManager';
 
 const tagManagerArgs = {
   //Indicar el ID del proyecto de marketing
